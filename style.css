@@ -423,7 +423,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('C:/Users/surjy/.gemini/antigravity/brain/11cf2a32-4819-4c27-a30b-6601eb8dbd2f/hero_background_1767803539944.png');
+    background-image: url('images/hero-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -486,15 +486,33 @@ a:hover {
 .hero-description {
     font-size: var(--font-size-lg);
     color: var(--color-text-secondary);
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
     max-width: 700px;
+}
+
+.hero-subheading {
+    font-size: var(--font-size-lg);
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-lg);
+    max-width: 700px;
+    line-height: 1.6;
 }
 
 .hero-actions {
     display: flex;
     gap: var(--spacing-md);
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: var(--spacing-md);
     flex-wrap: wrap;
+}
+
+.hero-trust {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-xl);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .hero-stats {
@@ -507,7 +525,13 @@ a:hover {
 .stat {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.25rem;
+}
+
+.stat-icon {
+    font-size: var(--font-size-3xl);
+    margin-bottom: 0.25rem;
 }
 
 .stat-number {
@@ -524,6 +548,7 @@ a:hover {
     color: var(--color-text-muted);
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .scroll-indicator {
@@ -579,7 +604,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('C:/Users/surjy/.gemini/antigravity/brain/11cf2a32-4819-4c27-a30b-6601eb8dbd2f/services_background_1767803562326.png');
+    background-image: url('images/services-bg.png');
     background-size: cover;
     background-position: center;
     opacity: 0.3;
@@ -688,8 +713,16 @@ a:hover {
 
 .service-description {
     color: var(--color-text-secondary);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     line-height: 1.7;
+}
+
+.service-industries {
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    margin-top: var(--spacing-md);
+    margin-bottom: 0.5rem;
 }
 
 .service-features {
@@ -714,6 +747,67 @@ a:hover {
     font-weight: 700;
 }
 
+/* === Why Choose Us Section === */
+.why-choose-us {
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-2xl);
+    border-top: 1px solid rgba(0, 229, 255, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.why-title {
+    font-size: var(--font-size-3xl);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    background: linear-gradient(135deg, var(--color-text-primary) 0%, var(--color-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.why-item {
+    background: rgba(19, 24, 36, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 229, 255, 0.15);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.why-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-glow-primary), var(--shadow-lg);
+    background: rgba(19, 24, 36, 0.9);
+}
+
+.why-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: var(--spacing-sm);
+}
+
+.why-item h4 {
+    color: var(--color-primary);
+    font-size: var(--font-size-lg);
+    margin-bottom: 0.5rem;
+}
+
+.why-item p {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    margin: 0;
+}
+
 /* === Brands Section === */
 .brands {
     position: relative;
@@ -727,7 +821,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('C:/Users/surjy/.gemini/antigravity/brain/11cf2a32-4819-4c27-a30b-6601eb8dbd2f/brands_background_1767803577052.png');
+    background-image: url('images/brands-bg.png');
     background-size: cover;
     background-position: center;
     opacity: 0.2;
@@ -821,7 +915,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('C:/Users/surjy/.gemini/antigravity/brain/11cf2a32-4819-4c27-a30b-6601eb8dbd2f/local_background_1767803595022.png');
+    background-image: url('images/coverage-bg.png');
     background-size: cover;
     background-position: center;
     opacity: 0.3;
@@ -1010,6 +1104,72 @@ a:hover {
     }
 }
 
+/* === Testimonials Section === */
+.testimonials {
+    position: relative;
+    padding: var(--spacing-2xl) 0;
+    background-color: var(--color-bg-darker);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.testimonial-card {
+    background: rgba(19, 24, 36, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 229, 255, 0.15);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    position: relative;
+    transition: all var(--transition-base);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-glow-primary), var(--shadow-lg);
+    background: rgba(19, 24, 36, 0.95);
+}
+
+.testimonial-quote {
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--color-primary);
+    opacity: 0.3;
+    font-family: Georgia, serif;
+    margin-bottom: var(--spacing-sm);
+}
+
+.testimonial-text {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-lg);
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+.testimonial-author strong {
+    color: var(--color-primary);
+    font-size: var(--font-size-base);
+}
+
+.testimonial-author span {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+}
+
 /* === Contact Section === */
 .contact {
     position: relative;
@@ -1023,7 +1183,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('C:/Users/surjy/.gemini/antigravity/brain/11cf2a32-4819-4c27-a30b-6601eb8dbd2f/contact_background_1767803612625.png');
+    background-image: url('images/contact-bg.png');
     background-size: cover;
     background-position: center;
     opacity: 0.3;
