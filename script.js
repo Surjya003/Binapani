@@ -184,58 +184,6 @@ function initFormValidation() {
         }
     });
 
-    // Custom form submission handling (for Netlify Forms)
-    form.addEventListener('submit', (e) => {
-        // Validate service selection
-        const serviceSelect = form.querySelector('#service');
-        if (serviceSelect && serviceSelect.value === '') {
-            e.preventDefault();
-
-            const parent = serviceSelect.closest('.form-group');
-            addClass(parent, 'error');
-
-            // Add error message if doesn't exist
-            if (!parent.querySelector('.error-message')) {
-                const errorMsg = document.createElement('span');
-                errorMsg.className = 'error-message';
-                errorMsg.textContent = 'Please select a service';
-                errorMsg.style.color = 'var(--color-secondary)';
-                errorMsg.style.fontSize = 'var(--font-size-xs)';
-                errorMsg.style.marginTop = '0.25rem';
-                errorMsg.style.display = 'block';
-                parent.appendChild(errorMsg);
-            }
-
-            // Scroll to error
-            serviceSelect.focus();
-            return;
-        }
-
-        // Netlify handles the submission, but we can add custom feedback
-        const submitButton = form.querySelector('button[type="submit"]');
-
-        if (submitButton) {
-            const originalHTML = submitButton.innerHTML;
-            submitButton.innerHTML = '<span>Sending...</span>';
-            submitButton.disabled = true;
-
-            // Re-enable after a delay (Netlify will handle the redirect)
-            setTimeout(() => {
-                submitButton.innerHTML = originalHTML;
-                submitButton.disabled = false;
-            }, 3000);
-        }
-    });
-
-    // Remove error on service selection change
-    const serviceSelect = form.querySelector('#service');
-    serviceSelect?.addEventListener('change', () => {
-        const parent = serviceSelect.closest('.form-group');
-        removeClass(parent, 'error');
-        const errorMsg = parent.querySelector('.error-message');
-        errorMsg?.remove();
-    });
-
     // Real-time validation
     const emailInput = select('#email');
     const phoneInput = select('#phone');
