@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive Migration Guide - Obsolete to Modern VFD Upgrades | Binapani Automation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YcnS/1p8OtqYJV5/Ml5E9T+4mhewgSOKODpf" crossorigin="anonymous">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .migration-page {
+            max-width: 1200px;
+            margin: 120px auto 60px;
+            padding: 0 20px;
+        }
+
+        .migration-page h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--color-text-dark);
+        }
+
+        .migration-intro {
+            background: rgba(0, 119, 182, 0.06);
+            border-left: 4px solid var(--color-primary);
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: var(--radius-sm);
+        }
+
+        .comparison-table {
+            width: 100%;
+            margin: 40px 0;
+            border-collapse: collapse;
+            background: var(--color-bg-white);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+        }
+
+        .comparison-table th {
+            background: var(--color-primary);
+            color: var(--color-text-white);
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            color: var(--color-text-body);
+        }
+
+        .comparison-table tr:hover {
+            background: rgba(0, 119, 182, 0.03);
+        }
+
+        .stock-badge-green {
+            background: #10b981;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: var(--radius-full);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .obsolete-badge {
+            background: #ef4444;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: var(--radius-full);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                    <span class="logo-text">Binapani Automation</span>
+                </a>
+                <a href="index.html" class="btn btn-primary"><i class="fas fa-arrow-left me-2"></i>Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="migration-page">
+        <h1>Legacy VFD Migration Guide</h1>
+        <p style="text-align: center; font-size: 1.2rem; color: var(--color-text-muted);">
+            Obsolete Drive Replacement Solutions for Steel Plants, Sponge Iron & Heavy Industry
+        </p>
+
+        <div class="migration-intro">
+            <h2><i class="fas fa-exclamation-triangle me-2" style="color: var(--color-primary);"></i>Is Your Plant Stuck
+                with Obsolete Drives?</h2>
+            <p><strong>The Obsolescence Crisis in Indian Steel & Sponge Iron Plants:</strong></p>
+            <ul style="line-height: 1.8;">
+                <li>Siemens <strong>Micromaster 440</strong> (2005-2012) - No longer produced, spare parts unavailable
+                </li>
+                <li>ABB <strong>ACS550</strong> (2000-2010) - Discontinued, migration forced</li>
+                <li>Danfoss <strong>VLT 2800</strong> series - Obsolete, no technical support</li>
+            </ul>
+            <p><strong>Your Options:</strong></p>
+            <ol style="line-height: 1.8;">
+                <li><i class="fas fa-times me-1" style="color: #ef4444;"></i> Wait 6-8 weeks for authorized dealer to
+                    source modern replacement</li>
+                <li><i class="fas fa-check me-1" style="color: #10b981;"></i> <strong>Buy from us TODAY</strong> - We
+                    stock modern equivalents with migration programming support</li>
+            </ol>
+        </div>
+
+        <h2 id="migration-guide">Obsolete &rarr; Modern Drive Comparison Table</h2>
+        <p style="margin-bottom: 20px;">We stock the modern replacements and provide migration programming to ensure
+            drop-in compatibility.</p>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Obsolete Model (Your Old Drive)</th>
+                    <th>Status</th>
+                    <th>Modern Replacement</th>
+                    <th>We Stock?</th>
+                    <th>Key Upgrade Benefits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Siemens Micromaster 440</strong><br>(0.12kW - 250kW)</td>
+                    <td><span class="obsolete-badge">OBSOLETE</span></td>
+                    <td><strong>Siemens Sinamics G120C/G120</strong></td>
+                    <td><span class="stock-badge-green">IN STOCK</span></td>
+                    <td>Modular design, Better torque control, USB programming</td>
+                </tr>
+                <tr>
+                    <td><strong>ABB ACS550</strong><br>(0.75kW - 355kW)</td>
+                    <td><span class="obsolete-badge">OBSOLETE</span></td>
+                    <td><strong>ABB ACS580</strong></td>
+                    <td><span class="stock-badge-green">IN STOCK</span></td>
+                    <td>Built-in PLC, Better EMC, Energy optimization</td>
+                </tr>
+                <tr>
+                    <td><strong>Danfoss VLT 2800</strong><br>(0.37kW - 75kW)</td>
+                    <td><span class="obsolete-badge">OBSOLETE</span></td>
+                    <td><strong>Danfoss FC302</strong></td>
+                    <td><span class="stock-badge-green">AVAILABLE</span></td>
+                    <td>HVAC optimized, Cascading control, Fire mode</td>
+                </tr>
+                <tr>
+                    <td><strong>Delta VFD-B Series</strong></td>
+                    <td><span class="obsolete-badge">OBSOLETE</span></td>
+                    <td><strong>Delta MS300/MS310</strong></td>
+                    <td><span class="stock-badge-green">IN STOCK</span></td>
+                    <td>Cost-effective, Higher overload, Better reliability</td>
+                </tr>
+                <tr>
+                    <td><strong>Schneider Altivar 31/312</strong></td>
+                    <td><span class="obsolete-badge">OBSOLETE</span></td>
+                    <td><strong>Schneider Altivar 320/ATV320</strong></td>
+                    <td><span class="stock-badge-green">IN STOCK</span></td>
+                    <td>SoMove software, Better connectivity, Compact size</td>
+                </tr>
+                <tr>
+                    <td><strong>Allen Bradley PowerFlex 40</strong></td>
+                    <td><span class="obsolete-badge">LEGACY</span></td>
+                    <td><strong>Allen Bradley PowerFlex 525</strong></td>
+                    <td><span class="stock-badge-green">AVAILABLE</span></td>
+                    <td>EtherNet/IP ready, Better motor control, LCD keypad</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2><i class="fas fa-tools me-2" style="color: var(--color-primary);"></i>Our Migration Service Includes:</h2>
+        <div class="row g-4 my-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3"><i class="fas fa-sliders-h fa-2x"
+                                style="color: var(--color-primary);"></i></div>
+                        <h5 style="color: var(--color-primary);">1. Parameter Comparison</h5>
+                        <p class="mb-0">We compare your old drive parameters and configure the new drive to match your
+                            application.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3"><i class="fas fa-project-diagram fa-2x"
+                                style="color: var(--color-primary);"></i></div>
+                        <h5 style="color: var(--color-primary);">2. Wiring Adaptation</h5>
+                        <p class="mb-0">Terminal mapping guide to connect new drive to existing panel wiring.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3"><i class="fas fa-hard-hat fa-2x"
+                                style="color: var(--color-primary);"></i></div>
+                        <h5 style="color: var(--color-primary);">3. On-Site Commissioning</h5>
+                        <p class="mb-0">We can visit your plant to commission the new drive if needed (West
+                            Bengal/Eastern India).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2><i class="fas fa-industry me-2" style="color: var(--color-primary);"></i>Target Industries We Serve:</h2>
+        <ul style="line-height: 2;">
+            <li><strong>Sponge Iron (DRI) Plants:</strong> Kiln main drives, Coal Thrower, Crusher drives (75kW -
+                500kW)</li>
+            <li><strong>Steel Rolling Mills:</strong> Flying shears, Mill stands, Coil handling (high-precision sync
+                required)</li>
+            <li><strong>Power Plants:</strong> ID/FD Fans, Boiler feed pumps (150kW - 500kW energy-saving applications)
+            </li>
+            <li><strong>Cement Plants:</strong> Kiln, Raw mill, Cement mill drives</li>
+            <li><strong>Foundries & Forging:</strong> EOT cranes, Induction furnace blowers</li>
+        </ul>
+
+        <div class="migration-intro" style="margin-top: 40px;">
+            <h2><i class="fas fa-phone-alt me-2" style="color: var(--color-primary);"></i>Emergency Stock Inquiry</h2>
+            <p><strong>Plant shutdown due to obsolete drive failure?</strong></p>
+            <p>WhatsApp us your old drive nameplate photo. We'll confirm stock availability within 30 minutes.</p>
+            <div style="margin-top: 20px;">
+                <a href="https://wa.me/919641401725" class="btn btn-primary me-2" target="_blank"><i
+                        class="fab fa-whatsapp me-1"></i> WhatsApp: +91-9641401725</a>
+                <a href="tel:9641401725" class="btn btn-outline"><i class="fas fa-phone me-1"></i> Call:
+                    9641401725</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Binapani Automation. All rights reserved.</p>
+                <p><a href="privacy-policy.html" style="color: var(--color-secondary);">Privacy Policy</a> | <a
+                        href="terms-of-service.html" style="color: var(--color-secondary);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
